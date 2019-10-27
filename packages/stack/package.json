@@ -1,0 +1,27 @@
+{
+  "name": "@utlime/stack",
+  "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "stack",
+  "main": "dist/index.umd.js",
+  "unpkg": "dist/index.iife.min.js",
+  "module": "dist/index.js",
+  "typings": "dist/types/index.d.ts",
+  "keywords": [
+    "stack"
+  ],
+  "scripts": {
+    "build": "rollup -c=../../rollup.config.ts"
+  },
+  "author": "Alex Vysotsky <utlime@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/utlime/structures/tree/master/packages/stack"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^0.66.6"
+  }
+}

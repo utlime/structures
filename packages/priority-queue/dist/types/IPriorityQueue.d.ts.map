@@ -1,0 +1,1 @@
+{"version":3,"file":"IPriorityQueue.d.ts","sourceRoot":"","sources":["../../src/IPriorityQueue.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,cAAc,CAAC,CAAC;IAC/B,OAAO,CAAC,IAAI,EAAE,CAAC,EAAE,QAAQ,EAAE,MAAM,GAAG,IAAI,CAAC;IACzC,OAAO,IAAI,CAAC,GAAG,SAAS,CAAC;CAC1B"}

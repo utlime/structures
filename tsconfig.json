@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "strict": true
+  },
+  "files": [],
+  "references": [
+    { "path": "packages/heap" },
+    { "path": "packages/priority-queue" },
+    { "path": "packages/queue" },
+    { "path": "packages/stack" }
+  ]
+}
