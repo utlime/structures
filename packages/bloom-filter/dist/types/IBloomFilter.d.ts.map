@@ -1,0 +1,1 @@
+{"version":3,"file":"IBloomFilter.d.ts","sourceRoot":"","sources":["../../src/IBloomFilter.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,YAAY,CAAC,CAAC;IAC7B,GAAG,CAAC,IAAI,EAAE,CAAC,GAAG,IAAI,CAAC;IACnB,GAAG,CAAC,IAAI,EAAE,CAAC,GAAG,OAAO,CAAC;CACvB"}

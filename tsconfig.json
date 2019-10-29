@@ -7,6 +7,7 @@
     { "path": "packages/heap" },
     { "path": "packages/priority-queue" },
     { "path": "packages/queue" },
-    { "path": "packages/stack" }
+    { "path": "packages/stack" },
+    { "path": "packages/bloom-filter" }
   ]
 }
