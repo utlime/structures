@@ -1,0 +1,27 @@
+{
+  "name": "@utlime/greatest-common-divisor",
+  "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "greatest-common-divisor",
+  "main": "dist/index.umd.js",
+  "unpkg": "dist/index.iife.min.js",
+  "module": "dist/index.js",
+  "typings": "dist/types/index.d.ts",
+  "keywords": [
+    "greatest-common-divisor"
+  ],
+  "scripts": {
+    "build": "rollup -c=../../rollup.config.ts"
+  },
+  "author": "Alex Vysotsky <utlime@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/utlime/structures/tree/master/packages/greatest-common-divisor"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^0.66.6"
+  }
+}
