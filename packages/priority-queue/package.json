@@ -1,6 +1,6 @@
 {
   "name": "@utlime/priority-queue",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publishConfig": {
     "access": "public"
   },
@@ -26,7 +26,7 @@
     "@utlime/heap": "^0.1.0"
   },
   "devDependencies": {
-    "rollup": "^0.66.6",
-    "@utlime/heap": "^0.1.0"
+    "@utlime/heap": "^0.1.1",
+    "rollup": "^0.66.6"
   }
 }
