@@ -11,5 +11,9 @@ describe('Queue', () => {
     expect(queue.dequeue()).toBe(2);
     expect(queue.dequeue()).toBe(3);
     expect(queue.dequeue()).toBe(undefined);
+
+    queue.enqueue(4);
+    expect(queue.dequeue()).toBe(4);
+    expect(queue.dequeue()).toBe(undefined);
   });
 });

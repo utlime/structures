@@ -1,6 +1,7 @@
 import { IQueue } from './IQueue';
 export declare class Queue<T> implements IQueue<T> {
-    private storage;
+    private root;
+    private tail;
     dequeue(): T | undefined;
     enqueue(item: T): void;
 }

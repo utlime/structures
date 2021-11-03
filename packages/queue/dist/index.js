@@ -1,12 +1,31 @@
 class Queue {
     constructor() {
-        this.storage = [];
+        this.root = null;
+        this.tail = null;
     }
     dequeue() {
-        return this.storage.shift();
+        if (this.root != null) {
+            const [item, root] = this.root;
+            if (this.root === this.tail) {
+                this.root = this.tail = root;
+            }
+            else {
+                this.root = root;
+            }
+            return item;
+        }
+        return undefined;
     }
     enqueue(item) {
-        this.storage.push(item);
+        const wrapped = [item, null];
+        if (this.tail != null) {
+            this.tail[1] = wrapped;
+            this.tail = wrapped;
+        }
+        else {
+            this.root = wrapped;
+            this.tail = wrapped;
+        }
     }
 }
 
