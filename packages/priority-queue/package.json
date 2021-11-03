@@ -1,6 +1,6 @@
 {
   "name": "@utlime/priority-queue",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "publishConfig": {
     "access": "public"
   },
@@ -26,7 +26,7 @@
     "@utlime/heap": "^0.1.0"
   },
   "devDependencies": {
-    "@utlime/heap": "^0.1.1",
+    "@utlime/heap": "^1.0.0",
     "rollup": "^0.66.6"
   },
   "gitHead": "d2492cc09fb6e67ec1a85ab6c0f838186cb2d53c"
