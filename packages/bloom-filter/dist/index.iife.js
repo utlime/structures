@@ -1,44 +1,40 @@
 var UtlimeBloomFilter = (function (exports) {
   'use strict';
 
-  var BitSet = /** @class */ (function () {
-      function BitSet(size) {
+  class BitSet {
+      constructor(size) {
           this.map = new Map();
           this.size = size;
       }
-      BitSet.prototype.set = function (position, value) {
+      set(position, value) {
           this.map.set(position % this.size, value);
-      };
-      BitSet.prototype.get = function (position) {
+      }
+      get(position) {
           return this.map.get(position % this.size) || 0;
-      };
-      BitSet.prototype.toString = function () {
-          var str = [];
-          for (var i = 0; i < this.size; i++) {
+      }
+      toString() {
+          const str = [];
+          for (let i = 0; i < this.size; i++) {
               str.push(this.get(i));
           }
           return str.join('');
-      };
-      return BitSet;
-  }());
+      }
+  }
 
-  var BloomFilter = /** @class */ (function () {
-      function BloomFilter(size, hash) {
+  class BloomFilter {
+      constructor(size, hash) {
           this.bitSet = new BitSet(size);
           this.hash = hash;
       }
-      BloomFilter.prototype.add = function (item) {
-          var _this = this;
-          this.hash.forEach(function (hash) {
-              _this.bitSet.set(hash(item), 1);
+      add(item) {
+          this.hash.forEach(hash => {
+              this.bitSet.set(hash(item), 1);
           });
-      };
-      BloomFilter.prototype.has = function (item) {
-          var _this = this;
-          return !this.hash.some(function (hash) { return _this.bitSet.get(hash(item)) === 0; });
-      };
-      return BloomFilter;
-  }());
+      }
+      has(item) {
+          return !this.hash.some(hash => this.bitSet.get(hash(item)) === 0);
+      }
+  }
 
   exports.BloomFilter = BloomFilter;
 

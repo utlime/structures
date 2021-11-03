@@ -4,11 +4,10 @@
   (factory((global.UtlimeGreatestCommonDivisor = {})));
 }(this, (function (exports) { 'use strict';
 
-  var GreatestCommonDivisor = function (a, b) {
-      var _a;
+  const GreatestCommonDivisor = (a, b) => {
       while (b > 0) {
           a %= b;
-          _a = [b, a], a = _a[0], b = _a[1];
+          [a, b] = [b, a];
       }
       return a;
   };

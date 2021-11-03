@@ -4,18 +4,17 @@
   (factory((global.UtlimeQueue = {})));
 }(this, (function (exports) { 'use strict';
 
-  var Queue = /** @class */ (function () {
-      function Queue() {
+  class Queue {
+      constructor() {
           this.storage = [];
       }
-      Queue.prototype.dequeue = function () {
+      dequeue() {
           return this.storage.shift();
-      };
-      Queue.prototype.enqueue = function (item) {
+      }
+      enqueue(item) {
           this.storage.push(item);
-      };
-      return Queue;
-  }());
+      }
+  }
 
   exports.Queue = Queue;
 

@@ -4,18 +4,17 @@
   (factory((global.UtlimeStack = {})));
 }(this, (function (exports) { 'use strict';
 
-  var Stack = /** @class */ (function () {
-      function Stack() {
+  class Stack {
+      constructor() {
           this.storage = [];
       }
-      Stack.prototype.pop = function () {
+      pop() {
           return this.storage.pop();
-      };
-      Stack.prototype.push = function (item) {
+      }
+      push(item) {
           this.storage.push(item);
-      };
-      return Stack;
-  }());
+      }
+  }
 
   exports.Stack = Stack;
 
