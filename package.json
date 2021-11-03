@@ -7,13 +7,15 @@
     "type": "git",
     "url": "https://github.com/utlime/structures"
   },
+  "workspaces": [
+    "./packages/*"
+  ],
   "scripts": {
     "commit": "git-cz",
     "prettier": "prettier --write 'packages/*/{src,tests,stories}/**/*.{ts,tsx}'",
     "lint": "tslint --project tsconfig.json -t codeFrame 'packages/*/src/**/*.ts' 'packages/*/test/**/*.ts'",
     "test": "jest --coverage",
     "build": "lerna run --stream build",
-    "bootstrap": "lerna bootstrap --hoist",
     "publish": "npm run test && npm run build && lerna publish",
     "precommit1": "lint-staged"
   },
