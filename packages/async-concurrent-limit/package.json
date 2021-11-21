@@ -1,6 +1,6 @@
 {
   "name": "@utlime/async-concurrent-limit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publishConfig": {
     "access": "public"
   },
@@ -22,9 +22,9 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "rollup": "^0.66.6",
     "@utlime/queue": "^1.0.0",
-    "@utlime/stack": "^1.0.0"
+    "@utlime/stack": "^1.0.0",
+    "rollup": "^0.66.6"
   },
   "peerDependencies": {
     "@utlime/queue": "^1.0.0",
