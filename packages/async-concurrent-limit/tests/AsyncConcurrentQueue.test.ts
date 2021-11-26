@@ -61,4 +61,38 @@ describe('AsyncConcurrentQueue', () => {
 
     expect(order).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
   });
+
+  it('should run tasks in correct order 2', async () => {
+    let index: number = 0;
+    const order: number[] = [];
+
+    const task = (delay: number = 0) => {
+      const taskNumber = (index += 1);
+      return () =>
+        new Promise(resolve => {
+          setTimeout(() => {
+            order.push(taskNumber);
+            resolve(taskNumber);
+          }, delay);
+        });
+    };
+
+    const concurrentLimit = new AsyncConcurrentQueue(3);
+
+    const tasks = [];
+
+    tasks.push(concurrentLimit.add(task(50)));
+    tasks.push(concurrentLimit.add(task(100)));
+    tasks.push(concurrentLimit.add(task(150)));
+
+    await tasks[0];
+
+    tasks.push(concurrentLimit.add(task()));
+
+    await tasks[3];
+
+    await Promise.all(tasks);
+
+    expect(order).toEqual([1, 4, 2, 3]);
+  });
 });
