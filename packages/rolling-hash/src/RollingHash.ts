@@ -1,4 +1,4 @@
-import { IRollingHash } from './IRollingHash';
+import type { IRollingHash } from './IRollingHash';
 
 export class RollingHash implements IRollingHash {
   private readonly base: number;

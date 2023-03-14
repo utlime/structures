@@ -1,6 +1,4 @@
 .idea
-.rpt2_cache
 .DS_Store
 node_modules
 coverage
-lerna-debug.log

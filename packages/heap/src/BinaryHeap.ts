@@ -1,5 +1,5 @@
 import { BinaryTree } from './BinaryTree';
-import { IHeap } from './IHeap';
+import type { IHeap } from './IHeap';
 
 type PriorityItem<T> = Readonly<{ item: T; priority: number }>;
 

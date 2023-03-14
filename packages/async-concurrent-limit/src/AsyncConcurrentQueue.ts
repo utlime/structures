@@ -1,6 +1,6 @@
 import { Queue } from '@utlime/queue';
 import { AsyncConcurrentLimit } from './AsyncConcurrentLimit';
-import { Task } from './IAsyncConcurrentLimit';
+import type { Task } from './IAsyncConcurrentLimit';
 
 export class AsyncConcurrentQueue extends AsyncConcurrentLimit<undefined> {
   protected queue: Queue<Task<any>>;

@@ -1,4 +1,4 @@
-import { IAsyncConcurrentLimit, Task } from './IAsyncConcurrentLimit';
+import type { IAsyncConcurrentLimit, Task } from './IAsyncConcurrentLimit';
 
 export abstract class AsyncConcurrentLimit<O> implements IAsyncConcurrentLimit<O> {
   private readonly limit: number;

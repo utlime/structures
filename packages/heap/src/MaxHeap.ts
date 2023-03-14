@@ -1,5 +1,5 @@
 import { BinaryHeap } from './BinaryHeap';
-import { IHeap } from './IHeap';
+import type { IHeap } from './IHeap';
 
 export class MaxHeap<T> implements IHeap<T> {
   private readonly heap: BinaryHeap<T>;

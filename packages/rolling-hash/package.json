@@ -1,28 +1,23 @@
 {
   "name": "@utlime/rolling-hash",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json"
+  },
   "publishConfig": {
     "access": "public"
   },
   "description": "rolling-hash",
-  "main": "dist/index.umd.js",
-  "unpkg": "dist/index.iife.min.js",
-  "module": "dist/index.js",
-  "typings": "dist/types/index.d.ts",
   "keywords": [
     "rolling-hash"
   ],
-  "scripts": {
-    "build": "rollup -c=../../rollup.config.ts"
-  },
   "author": "Alex Vysotsky <utlime@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/utlime/structures/tree/master/packages/rolling-hash"
   },
   "license": "MIT",
-  "devDependencies": {
-    "rollup": "^0.66.6"
-  },
   "gitHead": "d2492cc09fb6e67ec1a85ab6c0f838186cb2d53c"
 }

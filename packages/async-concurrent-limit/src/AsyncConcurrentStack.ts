@@ -1,6 +1,6 @@
 import { Stack } from '@utlime/stack';
 import { AsyncConcurrentLimit } from './AsyncConcurrentLimit';
-import { Task } from './IAsyncConcurrentLimit';
+import type { Task } from './IAsyncConcurrentLimit';
 
 export class AsyncConcurrentStack extends AsyncConcurrentLimit<undefined> {
   protected stack: Stack<Task<any>>;

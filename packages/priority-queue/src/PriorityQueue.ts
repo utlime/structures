@@ -1,5 +1,5 @@
 import { BinaryHeap } from '@utlime/heap';
-import { IPriorityQueue } from './IPriorityQueue';
+import type { IPriorityQueue } from './IPriorityQueue';
 
 export class PriorityQueue<T> implements IPriorityQueue<T> {
   private heap: BinaryHeap<{ queueItem: T; order: number }>;

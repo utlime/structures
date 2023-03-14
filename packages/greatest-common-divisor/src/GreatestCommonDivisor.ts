@@ -1,4 +1,4 @@
-import { IGreatestCommonDivisor } from './IGreatestCommonDivisor';
+import type { IGreatestCommonDivisor } from './IGreatestCommonDivisor';
 
 export const GreatestCommonDivisor: IGreatestCommonDivisor = (a, b) => {
   while (b > 0) {

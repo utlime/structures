@@ -1,1 +1,0 @@
-{"version":3,"file":"IAsyncConcurrentLimit.d.ts","sourceRoot":"","sources":["../../src/IAsyncConcurrentLimit.ts"],"names":[],"mappings":"AAAA,oBAAY,IAAI,CAAC,CAAC,IAAI,MAAM,OAAO,CAAC,CAAC,CAAC,CAAC;AAEvC,MAAM,WAAW,qBAAqB,CAAC,CAAC,SAAS,GAAG;IAClD,GAAG,CAAC,CAAC,EAAE,IAAI,EAAE,IAAI,CAAC,CAAC,CAAC,EAAE,OAAO,EAAE,CAAC,GAAG,OAAO,CAAC,CAAC,CAAC,CAAC;CAC/C"}

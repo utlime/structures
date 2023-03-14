@@ -1,13 +1,3 @@
 {
-  "extends": "../tsconfig.settings.json",
-  "compilerOptions": {
-    "declarationDir": "dist/types",
-    "outDir": "dist/lib",
-    "rootDir": "src",
-    "baseUrl": "."
-  },
-  "include": ["src"],
-  "references": [
-    { "path": "../heap" }
-  ]
+  "extends": "../tsconfig.settings.json"
 }

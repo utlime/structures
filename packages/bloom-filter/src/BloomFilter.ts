@@ -1,5 +1,5 @@
 import { BitSet } from './BitSet';
-import { IBloomFilter } from './IBloomFilter';
+import type { IBloomFilter } from './IBloomFilter';
 
 export class BloomFilter<T> implements IBloomFilter<T> {
   private readonly bitSet: BitSet;

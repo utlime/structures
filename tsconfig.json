@@ -4,11 +4,13 @@
   },
   "files": [],
   "references": [
+    { "path": "packages/async-concurrent-limit" },
+    { "path": "packages/bloom-filter" },
+    { "path": "packages/greatest-common-divisor" },
     { "path": "packages/heap" },
     { "path": "packages/priority-queue" },
     { "path": "packages/queue" },
-    { "path": "packages/stack" },
     { "path": "packages/rolling-hash" },
-    { "path": "packages/bloom-filter" }
+    { "path": "packages/stack" }
   ]
 }

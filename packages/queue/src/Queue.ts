@@ -1,4 +1,4 @@
-import { IQueue } from './IQueue';
+import type { IQueue } from './IQueue';
 
 type Item<T> = [T, Item<T> | null];
 
