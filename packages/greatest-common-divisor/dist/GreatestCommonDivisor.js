@@ -5,4 +5,3 @@ export const GreatestCommonDivisor = (a, b) => {
     }
     return a;
 };
-//# sourceMappingURL=GreatestCommonDivisor.js.map

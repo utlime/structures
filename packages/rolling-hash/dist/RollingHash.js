@@ -16,4 +16,3 @@ export class RollingHash {
         return extended;
     }
 }
-//# sourceMappingURL=RollingHash.js.map

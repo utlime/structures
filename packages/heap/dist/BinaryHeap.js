@@ -47,4 +47,3 @@ export class BinaryHeap {
         return this.comparator(this.storage.value(a), this.storage.value(b));
     }
 }
-//# sourceMappingURL=BinaryHeap.js.map

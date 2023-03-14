@@ -15,4 +15,3 @@ export class BloomFilter {
         return !this.hash.some(hash => this.bitSet.get(hash(item)) === 0);
     }
 }
-//# sourceMappingURL=BloomFilter.js.map

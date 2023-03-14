@@ -1,5 +1,5 @@
 {
-  "extends": "../tsconfig.settings.json",
+  "extends": "../tsconfig.build.settings.json",
   "compilerOptions": {
     "tsBuildInfoFile": "../../node_modules/.cache/typescript/queue.build.tsbuildinfo",
     "declarationDir": "dist",

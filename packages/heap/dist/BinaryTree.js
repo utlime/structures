@@ -34,4 +34,3 @@ export class BinaryTree {
         return a >= 0 && a < this.storage.length;
     }
 }
-//# sourceMappingURL=BinaryTree.js.map

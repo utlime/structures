@@ -7,4 +7,3 @@ export class Stack {
         this.storage.push(item);
     }
 }
-//# sourceMappingURL=Stack.js.map

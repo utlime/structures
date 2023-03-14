@@ -18,4 +18,3 @@ export class BitSet {
         return str.join('');
     }
 }
-//# sourceMappingURL=BitSet.js.map

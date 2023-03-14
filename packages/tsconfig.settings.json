@@ -8,7 +8,7 @@
     "strict": true,
     "sourceMap": true,
     "declaration": true,
-    "declarationMap": false,
+    "declarationMap": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "typeRoots": ["../node_modules/@types"]

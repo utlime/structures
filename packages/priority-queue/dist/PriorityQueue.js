@@ -24,4 +24,3 @@ export class PriorityQueue {
         this.heap.insert({ queueItem, order: this.counter++ }, priority);
     }
 }
-//# sourceMappingURL=PriorityQueue.js.map

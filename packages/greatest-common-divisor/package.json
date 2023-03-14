@@ -1,6 +1,6 @@
 {
   "name": "@utlime/greatest-common-divisor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "module": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {

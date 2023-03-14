@@ -26,4 +26,3 @@ export class Queue {
         }
     }
 }
-//# sourceMappingURL=Queue.js.map

@@ -11,4 +11,3 @@ export class MaxHeap {
         return this.heap.extract();
     }
 }
-//# sourceMappingURL=MaxHeap.js.map
