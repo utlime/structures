@@ -2,7 +2,7 @@ src
 tests
 .rpt2_cache
 CHANGELOG.md
-jest.config.js
+jest.config.cjs
 tsconfig.build.json
 tsconfig.json
 tsconfig.test.json
