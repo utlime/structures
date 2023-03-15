@@ -1,4 +1,4 @@
-import { BinaryHeap } from './BinaryHeap';
+import { BinaryHeap } from './BinaryHeap.js';
 import type { IHeap } from './IHeap';
 
 export class MaxHeap<T> implements IHeap<T> {

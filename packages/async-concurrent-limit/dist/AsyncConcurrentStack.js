@@ -1,5 +1,5 @@
 import { Stack } from '@utlime/stack';
-import { AsyncConcurrentLimit } from './AsyncConcurrentLimit';
+import { AsyncConcurrentLimit } from './AsyncConcurrentLimit.js';
 export class AsyncConcurrentStack extends AsyncConcurrentLimit {
     stack;
     constructor(limit) {

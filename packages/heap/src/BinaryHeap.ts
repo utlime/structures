@@ -1,4 +1,4 @@
-import { BinaryTree } from './BinaryTree';
+import { BinaryTree } from './BinaryTree.js';
 import type { IHeap } from './IHeap';
 
 type PriorityItem<T> = Readonly<{ item: T; priority: number }>;

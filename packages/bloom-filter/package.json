@@ -1,7 +1,8 @@
 {
   "name": "@utlime/bloom-filter",
-  "version": "1.0.2",
-  "module": "dist/index.js",
+  "version": "1.0.3",
+  "type": "module",
+  "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -p tsconfig.build.json"

@@ -1,2 +1,2 @@
 export type { IRollingHash } from './IRollingHash';
-export * from './RollingHash';
+export * from './RollingHash.js';

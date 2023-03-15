@@ -1,2 +1,2 @@
 export type { IQueue } from './IQueue';
-export * from './Queue';
+export * from './Queue.js';

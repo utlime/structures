@@ -1,5 +1,5 @@
 import { Queue } from '@utlime/queue';
-import { AsyncConcurrentLimit } from './AsyncConcurrentLimit';
+import { AsyncConcurrentLimit } from './AsyncConcurrentLimit.js';
 export class AsyncConcurrentQueue extends AsyncConcurrentLimit {
     queue;
     constructor(limit) {

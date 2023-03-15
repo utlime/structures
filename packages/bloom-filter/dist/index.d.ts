@@ -1,2 +1,2 @@
 export type { IBloomFilter } from './IBloomFilter';
-export * from './BloomFilter';
+export * from './BloomFilter.js';

@@ -1,5 +1,5 @@
 import { Queue } from '@utlime/queue';
-import { AsyncConcurrentLimit } from './AsyncConcurrentLimit';
+import { AsyncConcurrentLimit } from './AsyncConcurrentLimit.js';
 import type { Task } from './IAsyncConcurrentLimit';
 export declare class AsyncConcurrentQueue extends AsyncConcurrentLimit<undefined> {
     protected queue: Queue<Task<any>>;

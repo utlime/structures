@@ -1,4 +1,4 @@
-import { BitSet } from './BitSet';
+import { BitSet } from './BitSet.js';
 import type { IBloomFilter } from './IBloomFilter';
 
 export class BloomFilter<T> implements IBloomFilter<T> {

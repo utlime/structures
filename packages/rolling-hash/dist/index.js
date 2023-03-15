@@ -1,1 +1,1 @@
-export * from './RollingHash';
+export * from './RollingHash.js';

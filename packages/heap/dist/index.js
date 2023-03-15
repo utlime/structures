@@ -1,3 +1,3 @@
-export * from './BinaryHeap';
-export * from './MinHeap';
-export * from './MaxHeap';
+export * from './BinaryHeap.js';
+export * from './MinHeap.js';
+export * from './MaxHeap.js';

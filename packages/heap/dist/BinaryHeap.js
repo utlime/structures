@@ -1,4 +1,4 @@
-import { BinaryTree } from './BinaryTree';
+import { BinaryTree } from './BinaryTree.js';
 export class BinaryHeap {
     storage = new BinaryTree();
     comparator;

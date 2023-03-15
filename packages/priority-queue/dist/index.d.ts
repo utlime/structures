@@ -1,2 +1,2 @@
 export type { IPriorityQueue } from './IPriorityQueue';
-export * from './PriorityQueue';
+export * from './PriorityQueue.js';

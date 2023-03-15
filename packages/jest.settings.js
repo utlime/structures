@@ -7,6 +7,7 @@ module.exports = ({ name }, rootDir) => ({
   moduleNameMapper: {
     '@utlime/([^/]*)$': '<rootDir>/../$1/src',
     '@utlime/([^/]*)/(.*)$': '<rootDir>/../$1/$2',
+    '^(\\.{1,2}/.*)\\.js$': '$1',
   },
   transform: {
     '^.+\\.ts$': ['ts-jest', { tsconfig: '<rootDir>/tsconfig.test.json' }],

@@ -1,4 +1,4 @@
-import { BinaryHeap } from './BinaryHeap';
+import { BinaryHeap } from './BinaryHeap.js';
 export class MinHeap {
     heap;
     constructor() {

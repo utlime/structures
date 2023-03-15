@@ -1,2 +1,2 @@
 export type { IStack } from './IStack';
-export * from './Stack';
+export * from './Stack.js';
