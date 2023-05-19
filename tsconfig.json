@@ -6,6 +6,7 @@
   "references": [
     { "path": "packages/async-concurrent-limit" },
     { "path": "packages/bloom-filter" },
+    { "path": "packages/debounce" },
     { "path": "packages/greatest-common-divisor" },
     { "path": "packages/heap" },
     { "path": "packages/priority-queue" },
