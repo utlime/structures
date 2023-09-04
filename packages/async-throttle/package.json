@@ -1,0 +1,26 @@
+{
+  "name": "@utlime/async-throttle",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "async throttle",
+  "keywords": [
+    "async",
+    "throttle",
+    "promise"
+  ],
+  "author": "Alex Vysotsky <utlime@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/utlime/structures/tree/master/packages/async-throttle"
+  },
+  "license": "MIT",
+  "gitHead": "d2492cc09fb6e67ec1a85ab6c0f838186cb2d53c"
+}
