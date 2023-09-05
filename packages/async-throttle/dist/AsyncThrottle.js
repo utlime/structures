@@ -1,4 +1,4 @@
-import { ThrottleSkipError } from './ThrottleSkipError';
+import { ThrottleSkipError } from './ThrottleSkipError.js';
 export class AsyncThrottle {
     currentTask;
     trailingTask;

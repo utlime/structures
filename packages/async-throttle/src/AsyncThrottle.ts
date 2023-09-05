@@ -1,5 +1,5 @@
-import { ThrottleSkipError } from './ThrottleSkipError';
-import { Task, IAsyncThrottle } from './IAsyncThrottle';
+import { ThrottleSkipError } from './ThrottleSkipError.js';
+import type { Task, IAsyncThrottle } from './IAsyncThrottle';
 
 export class AsyncThrottle implements IAsyncThrottle {
   private currentTask?: Promise<any>;
