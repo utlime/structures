@@ -1,8 +1,8 @@
 import { Debounce } from '../src';
 
-function delay(timeout: number) {
+function delay(timeout: number = 10) {
   return new Promise(resolve => {
-    setTimeout(resolve, 10);
+    setTimeout(resolve, timeout);
   });
 }
 
@@ -15,7 +15,7 @@ describe('Debounce', () => {
       debounce.add(task);
     });
 
-    await delay(10);
+    await delay();
 
     expect(tasks[0]).not.toBeCalled();
     expect(tasks[1]).not.toBeCalled();

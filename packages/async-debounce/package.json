@@ -1,0 +1,24 @@
+{
+  "name": "@utlime/async-debounce",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "async debounce",
+  "keywords": [
+    "async",
+    "debounce"
+  ],
+  "author": "Alex Vysotsky <utlime@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/utlime/structures/tree/master/packages/async-debounce"
+  },
+  "license": "MIT"
+}
