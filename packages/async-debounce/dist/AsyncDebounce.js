@@ -7,10 +7,10 @@ export class AsyncDebounce {
         this.timeout = timeout;
     }
     run(task) {
-        clearTimeout(this.timerId);
-        this.reject?.(new DebounceSkipError());
         return new Promise((resolve, reject) => {
+            this.reject?.(new DebounceSkipError());
             this.reject = reject;
+            clearTimeout(this.timerId);
             this.timerId = setTimeout(() => {
                 task()
                     .then(resolve, reject)
@@ -21,5 +21,8 @@ export class AsyncDebounce {
                 });
             }, this.timeout);
         });
+    }
+    wrap(func) {
+        return ((...args) => this.run(() => func(...args)));
     }
 }

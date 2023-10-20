@@ -27,4 +27,8 @@ export class AsyncDebounce implements IAsyncDebounce {
       }, this.timeout);
     });
   }
+
+  wrap<V, T extends (...args: any[]) => Promise<V>>(func: T): T {
+    return ((...args) => this.run<V>(() => func(...args))) as T;
+  }
 }
