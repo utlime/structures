@@ -8,4 +8,7 @@ export class Debounce {
         clearTimeout(this.timerId);
         this.timerId = setTimeout(task, this.timeout);
     }
+    wrap(func) {
+        return ((...args) => this.add(() => func(...args)));
+    }
 }

@@ -21,4 +21,19 @@ describe('Debounce', () => {
     expect(tasks[1]).not.toBeCalled();
     expect(tasks[2]).toBeCalled();
   });
+
+  it('should call only last task', async () => {
+    const debounce = new Debounce(1);
+    const fn = jest.fn();
+    const wrap = debounce.wrap(fn);
+    const tasks = [wrap, wrap, wrap];
+
+    tasks.forEach(task => {
+      task();
+    });
+
+    await delay();
+
+    expect(fn).toBeCalledTimes(1);
+  });
 });

@@ -12,4 +12,8 @@ export class Debounce implements IDebounce {
     clearTimeout(this.timerId);
     this.timerId = setTimeout(task, this.timeout);
   }
+
+  wrap<T extends (...args: any[]) => void>(func: T): T {
+    return ((...args) => this.add(() => func(...args))) as T;
+  }
 }
