@@ -1,4 +1,4 @@
-import { DebounceSkipError } from './DebounceSkipError';
+import { DebounceSkipError } from './DebounceSkipError.js';
 import type { IAsyncDebounce, Task } from './IAsyncDebounce';
 
 export class AsyncDebounce implements IAsyncDebounce {

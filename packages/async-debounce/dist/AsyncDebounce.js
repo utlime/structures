@@ -1,4 +1,4 @@
-import { DebounceSkipError } from './DebounceSkipError';
+import { DebounceSkipError } from './DebounceSkipError.js';
 export class AsyncDebounce {
     timeout;
     timerId = null;
